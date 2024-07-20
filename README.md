@@ -2,7 +2,7 @@
 Sonics is a project where I explore converting data into music. While many of these ideas came from many sources, and I do not claim them as my own, the execution is uniquely mine. 
 
 ### Time 
-I used the following chart to convert the digits to notes, based on the selected scale. 
+I used the following chart to convert digits to notes.
 
 | Major Scale  | 0 |  1 |  2 |  3 |  4 |  5 |  6 | 7 | 8 | 9 |
 | ----------- | ---- |---- |---- |---- |---- |---- |---- |---- |- |-- |
@@ -13,3 +13,16 @@ I used the following chart to convert the digits to notes, based on the selected
 | G  | G | A | B | C | D | E | F# | G | A | B |
 | A  | A | B | C# | D | E | F# | G# | A | B | C# |
 | B  | B | C# | D# | E | F# | G# | A# | B | C# | D# |
+
+The day of the week determines which scale to play: 
+| Day | Scale | 
+| --- | ----- | 
+| Sun | C | 
+| Mon | D | 
+| Tues | E | 
+| Wed | F | 
+| Thurs | G | 
+| Fri | A | 
+| Sat | B | 
+
+
