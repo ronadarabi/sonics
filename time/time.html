@@ -5,28 +5,41 @@
         <meta charset="utf-8" name="viewport">
         <script src="http://unpkg.com/tone"></script>
         <script src="/time/time.js" type="module"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="parent"> 
             <div class="center">
-                <span id="time"></span>
-                <button id="stop-play">▶</button>
+                <span class="bebas-neue-regular" id="time" style="color: white;"></span>
+                <button class="bebas-neue-regular" id="stop-play" style="color: white; ">▶</button>
             </div>
         </div>
         
     </body>
-      <style> 
-      .parent { 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        body { 
+            background-color: rgb(9, 58, 89);
+        }
+        .bebas-neue-regular {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 40px;
+        }
+        .parent { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
         #stop-play { 
             padding: 0;
             border: none;
             background: none;
             cursor: pointer;
         }
-      </style>
+    </style>
 </html>

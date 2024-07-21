@@ -51,11 +51,10 @@ function playBass() {
     for (let i = 0; i < num.length; i++) { 
         bassNotes.push(dict[num[i]] + '2');
     }
-    var synth = new Tone.Synth().toDestination();
+    var synth = new Tone.PolySynth(Tone.Synth).toDestination();
     var pattern = new Tone.Pattern(function(time,note){ 
         synth.triggerAttackRelease(note,'4n',time);
-        //console.log(note, '(bass)');
-        console.log(bassNotes);
+        console.log(note, '(bass)');
     }, bassNotes).start(0);
     Tone.Transport.bpm.value = 240; 
     synth.volume.value = 0;
@@ -70,17 +69,16 @@ function convertASCII() {
 }
 
 function playMelody(dateStr) { 
-    //const dateStr = new Date(); 
     let dict = map(convertDayOfWeek(dateStr));
     let melodyNotes = []; 
     let num = convertASCII() + dateStr.toLocaleString('en-GB').slice(12,24).replaceAll(':','');
     for (let i = 0; i < num.length; i++) { 
-        melodyNotes.push(dict[num[i]] + '4');
+        melodyNotes.push(dict[num[i]] + '5');
     }
-    var synth = new Tone.Synth().toDestination();
+    var synth = new Tone.PolySynth(Tone.Synth).toDestination();
     var pattern = new Tone.Pattern(function(time,note){ 
         synth.triggerAttackRelease(note,'8n',time);
-        console.log(melodyNotes);
+        console.log(note, '(melody)');
     }, melodyNotes).start(0);
     Tone.Transport.bpm.value = 240; 
     synth.volume.value = -15;
@@ -102,7 +100,6 @@ document.getElementById('stop-play').addEventListener('click', function() {
             stop();
             playBass(); 
             playMelody(new Date());
-            console.log(new Date());
             
         }, 2000);
         console.log('playing');
