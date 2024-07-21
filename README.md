@@ -1,7 +1,24 @@
 # Sonics
-Sonics is a project where I explore converting data into music. While many of these ideas came from many sources, and I do not claim them as my own, the execution is uniquely mine. 
+Sonics is a project where I explore converting data into music. Many of these ideas came from different sources, and I do not claim them as my own, but the execution is mine. 
+My goal is to gain experience with various music programming languages and toy around with this unique representation of data.
 
-### Time 
+## Time 
+
+### Details and thoughts 
+* General process
+  * JS Date Object used for display and for melody/bass line 
+  * Melody = ASCII code of Day of Week abbreviation and the time 
+  (e.g. Sunday(=S=83) at 15:45:46 -->  83154546)
+  * Bass = date (e.g. 01/01/2000 --> 01012000)
+  * I then used the below conversions to determine the scale and notes. 
+  * The melody updates every 2 seconds. Ideally, it would update every second but I found this tempo to be faster than I wanted (maybe I'll change it).
+* This was my first project. I used Tone.js. 
+    * I did not find the documentation to be very helpful or accessible for a first-time user. 
+    * Selection of instruments was limited. 
+    * I would consider using again with React (which I also have no experience with).
+* I was inspired by Aiza Lab.
+
+### Conversions
 I used the following chart to convert digits to notes.
 
 | Major Scale  | 0 |  1 |  2 |  3 |  4 |  5 |  6 | 7 | 8 | 9 |
@@ -25,10 +42,3 @@ The day of the week determines which scale to play:
 | Fri | A | 
 | Sat | B | 
 
-Some details:
-* The functionality is coded in Javascript using Tone.js - this project is my first time using the library. 
-* The date is fetched using the Date() class in Javascript. It is of a format similar to what is displayed on the live clock on the site.
-* I used the date (e.g. 07/20/2024) to create the bass line. 
-* For the melody, I used the ASCII code (2-digit) of the first character of the day of the week (e.g Sun=S=83) as well as the time (e.g. 16:45:44) for the melody. 
-* The melody updates every 2 seconds. Ideally, it would update every second, but I found this tempo too be too fast. 
-* I was inspired by Aiza Lab.
