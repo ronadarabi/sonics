@@ -13,9 +13,11 @@ My goal is to gain experience with various music programming languages and toy a
   * I then used the below conversions to determine the scale and notes. 
   * The melody updates every 2 seconds. Ideally, it would update every second but I found this tempo to be faster than I wanted (maybe I'll change it).
 * This was my first project. I used Tone.js. 
+    * I had difficulties importing Tone.js.
     * I did not find the documentation to be very helpful or accessible for a first-time user. 
     * Selection of instruments was limited. 
     * I would consider using again with React (which I also have no experience with).
+    
 * I was inspired by Aiza Lab.
 
 ### Conversions
