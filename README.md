@@ -1,9 +1,9 @@
 # Sonics
-Sonics is a project where I explore converting data into music. Many of these ideas came from different sources, and I do not claim them as my own, but the execution is mine. 
+[Sonics](https://ronadarabi.github.io/sonics/) is a project where I explore converting data into music. Many of these ideas came from different sources, and I do not claim them as my own, but the execution is mine. 
 My goal is to gain experience with various music programming languages and toy around with this unique representation of data.
 
-## Time 
-
+## [Time](https://ronadarabi.github.io/sonics/time/time.html)
+Plays music based on the current time
 ### Details and thoughts 
 * General process
   * JS Date Object used for display and for melody/bass line 
